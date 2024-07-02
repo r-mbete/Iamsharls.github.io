@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6402ec1a83.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container"> 
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul>
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark"></i>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm<span> Sharleen</span><br>Mwangi from Kenya</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="about-section">
+                <div class="about-image">
+                    <img src="Images/user.png.jpg" alt="User Image">
+                </div>
+                <div class="about-text">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Sharleen Mwangi, a 20-year-old graduate with a Bachelor's degree in Business, Information, and Technology from Strathmore University. I specialize in designing websites and crafting intuitive UI/UX experiences. Through my studies, I developed a passion for blending technology with user-centric design, ensuring that every digital interaction is smooth and engaging. My academic journey at Strathmore University equipped me with the skills to not only understand the technical aspects of web development but also to appreciate the importance of business principles in creating successful online platforms.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('Skills')">Skills</p> <!-- Corrected ID name -->
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p> <!-- Corrected ID name -->
+                        <p class="tab-links" onclick="opentab('Education')">Education</p> <!-- Corrected ID name -->
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills"> <!-- Make sure the initial active tab has the correct case -->
+                        <ul>
+                            <li><span>UI/UX</span><br>Design Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App Development</span><br>Building android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>UI/UX Design Training at Strathmore University</li>
+                            <li><span>2022 - 2024</span><br>IT Intern at Agricultural Finance Corporation</li>
+                            <li><span>2021 - 2022</span><br>UI/UX Design Intern at Black Shepherd Technologies</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2023</span><br>UI/UX Training at Strathmore University</li>
+                            <li><span>2022</span><br>MBA from Moringa School</li>
+                            <li><span>2021</span><br>Basic IT knowledge at University of Nairobi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+              <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Web design is the creation of websites and pages to reflect a company's brand and information and ensure a user-friendly experience.</p>
+                <a href="#">Learn more</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>It includes all aspects of the end user's interaction with the company, including its services and products.</p>
+                <a href="#">Learn more</a>
+              </div>
+              <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p> This is the action of designing different  mobile applications.</p>
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work1.png.jpg" >
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to other talented people around the world.Download it now from playstore.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work2.png.jpg" >
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app allows you to listen to music from artists all around the world.Download it now from playstore.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work3.png.avif" >
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to sellers and buyers all around the world, allowing you to shop and also sell things to the larger market.Download it now from playstore.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a> 
+        </div>
+    </div>
+
+    <div id="contact">
+        <br>
+        <div class="container">
+            <div class="row">
+                
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"> </i>sharleen.mwangi@strathmore.edu.com</p>
+                    <br>
+                    <p> <i class="fa-solid fa-phone"> </i>+254-796516752</p>
+                    <br>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook-messenger"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://gmail.com/"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <a href="Images/Sharleen Mwangi- CV.pdf.pdf" download class="btn btn2">Download CV</a>
+                </div>
+               
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Copyright © Sharleen. Made with <i class="fa-solid fa-heart"></i> Visual Studio</div>
+    </div>
+    </div>
+    
+    
+
+    <script>
+    var tablinks = document.getElementsByClassName('tab-links'); 
+    var tabcontents = document.getElementsByClassName('tab-contents'); 
+
+    function opentab(tabname) {
+        
+        for (let link of tablinks) {
+            link.classList.remove('active-link');
+        }
+
+       
+        for (let content of tabcontents) {
+            content.classList.remove('active-tab');
+        }
+
+        document.getElementById(tabname).classList.add('active-tab');
+
+        
+        const targetLink = Array.from(tablinks).find(link => link.onclick.toString().includes(tabname));
+        if (targetLink) {
+            targetLink.classList.add('active-link');
+        }
+    }
+    </script>
+    <script>
+       document.querySelector('.fa-solid.fa-bars').addEventListener('click', function() {
+    document.querySelector('nav ul').classList.add('show'); 
+});
+
+document.querySelector('.fa-solid.fa-xmark').addEventListener('click', function() {
+    document.querySelector('nav ul').classList.remove('show');  
+});
+
+    </script>
+    <form name="submit-to-google-sheet">
+        <input name="email" type="email" placeholder="Email" required>
+        <button type="submit">Send</button>
+      </form>
+      
+      <script>
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwiZ-qAZ7TvNRMZfkJadmT8R1cJG2iWzOZFOgSAMwStYHaSLOrLpKXb-tdwWD3oi3hC/exec'
+
+
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+
+            form.reset()
+
+            setTimeout(() => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(() => {
+                    msg.innerHTML = ""
+                }, 2000)
+            }, 90)
+
+        })
+        .catch(error => {
+            console.error('Error!', error.message)
+            msg.innerHTML = "An error occurred. Please try again later."
+        })
+})
+
+      </script>
+</body>
+</html>
